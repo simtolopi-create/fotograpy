@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Profesional - Orange Style</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#f97316', // Orange-500
+                        secondary: '#ea580c', // Orange-600
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <button id="backToTop" class="fixed bottom-5 right-5 bg-primary text-white p-3 rounded-full shadow-lg hidden hover:bg-secondary transition z-50">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <header class="fixed w-full bg-white shadow-md z-40">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-primary">PORTFO<span class="text-gray-900">LIO.</span></a>
+            <div class="hidden md:flex space-x-6 font-medium">
+                <a href="#home" class="hover:text-primary transition">Home</a>
+                <a href="#about" class="hover:text-primary transition">About</a>
+                <a href="#services" class="hover:text-primary transition">Services</a>
+                <a href="#projects" class="hover:text-primary transition">Projects</a>
+                <a href="#pricing" class="hover:text-primary transition">Pricing</a>
+                <a href="#contact" class="hover:text-primary transition">Contact</a>
+            </div>
+            <button class="md:hidden text-2xl" id="menuBtn"><i class="fas fa-bars"></i></button>
+        </nav>
+    </header>
+
+    <section id="home" class="h-screen flex items-center justify-center bg-[url('https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1920&q=80')] bg-cover bg-center bg-fixed">
+        <div class="absolute inset-0 bg-black opacity-60"></div>
+        <div class="relative text-center text-white px-4">
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-4">Kreativitas Tanpa <span class="text-primary">Batas</span></h1>
+            <p class="text-xl mb-8">Solusi digital profesional untuk pertumbuhan bisnis Anda.</p>
+            <a href="#projects" class="bg-primary hover:bg-secondary text-white px-8 py-3 rounded-full font-bold transition">Lihat Karya</a>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 container mx-auto px-6">
+        <div class="flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=600&q=80" alt="About" class="rounded-lg shadow-2xl">
+            </div>
+            <div class="md:w-1/2">
+                <h2 class="text-3xl font-bold mb-4 border-l-4 border-primary pl-4">Tentang Kami</h2>
+                <p class="text-gray-600 mb-6 leading-relaxed">Kami adalah tim kreatif yang berdedikasi untuk mengubah ide-ide brilian Anda menjadi kenyataan digital. Dengan pengalaman lebih dari 10 tahun di industri ini, kami mengutamakan kualitas dan kepuasan klien.</p>
+                <button class="border-2 border-primary text-primary px-6 py-2 rounded-lg hover:bg-primary hover:text-white transition">Pelajari Lebih Lanjut</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-12">Layanan Unggulan</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition group">
+                    <i class="fas fa-laptop-code text-5xl text-primary mb-6"></i>
+                    <h3 class="text-xl font-bold mb-4">Web Development</h3>
+                    <p class="text-gray-500">Website responsif, cepat, dan modern sesuai kebutuhan bisnis.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition">
+                    <i class="fas fa-paint-brush text-5xl text-primary mb-6"></i>
+                    <h3 class="text-xl font-bold mb-4">Graphic Design</h3>
+                    <p class="text-gray-500">Desain visual yang menarik untuk memperkuat branding Anda.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition">
+                    <i class="fas fa-bullhorn text-5xl text-primary mb-6"></i>
+                    <h3 class="text-xl font-bold mb-4">Digital Marketing</h3>
+                    <p class="text-gray-500">Strategi pemasaran digital untuk menjangkau audiens lebih luas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            <div>
+                <h2 class="text-3xl font-bold mb-8">Mengapa Memilih Kami?</h2>
+                <div class="space-y-4">
+                    <div class="flex items-start gap-4">
+                        <div class="bg-primary/10 p-2 rounded-lg text-primary"><i class="fas fa-check"></i></div>
+                        <div><h4 class="font-bold">Kecepatan Maksimal</h4><p class="text-sm text-gray-500">Optimasi performa tinggi di setiap proyek.</p></div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="bg-primary/10 p-2 rounded-lg text-primary"><i class="fas fa-check"></i></div>
+                        <div><h4 class="font-bold">Keamanan Terjamin</h4><p class="text-sm text-gray-500">Standar keamanan data terbaru.</p></div>
+                    </div>
+                </div>
+            </div>
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80" class="rounded-lg">
+        </div>
+    </section>
+
+    <section id="projects" class="py-20 bg-gray-900 text-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center">Proyek Terbaru</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="relative overflow-hidden group rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=500&q=80" class="w-full transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-primary/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500">
+                        <span class="text-xl font-bold">E-Commerce App</span>
+                    </div>
+                </div>
+                <div class="relative overflow-hidden group rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1551288049-bbbda536339a?auto=format&fit=crop&w=500&q=80" class="w-full transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-primary/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500">
+                        <span class="text-xl font-bold">Dashboard Admin</span>
+                    </div>
+                </div>
+                <div class="relative overflow-hidden group rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=500&q=80" class="w-full transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-primary/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500">
+                        <span class="text-xl font-bold">Portofolio Fotografi</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold mb-12">Tim Ahli Kami</h2>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="text-center">
+                <img src="https://i.pravatar.cc/150?u=1" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-primary">
+                <h4 class="font-bold">Firmansyah</h4>
+                <p class="text-sm text-gray-500">CEO & Founder</p>
+            </div>
+            <div class="text-center">
+                <img src="https://i.pravatar.cc/150?u=2" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-primary">
+                <h4 class="font-bold">Ari ganteng</h4>
+                <p class="text-sm text-gray-500">Lead Designer</p>
+            </div>
+            <div class="text-center">
+                <img src="https://i.pravatar.cc/150?u=3" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-primary">
+                <h4 class="font-bold">Mike Chen</h4>
+                <p class="text-sm text-gray-500">Developer</p>
+            </div>
+            <div class="text-center">
+                <img src="https://i.pravatar.cc/150?u=4" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-primary">
+                <h4 class="font-bold">Jessica Rose</h4>
+                <p class="text-sm text-gray-500">Marketing</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center">Paket Harga</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg border-t-4 border-gray-300 shadow-sm">
+                    <h3 class="text-lg font-bold mb-4">Basic</h3>
+                    <div class="text-4xl font-bold mb-6">Rp 1jt<span class="text-sm text-gray-400">/proyek</span></div>
+                    <ul class="mb-8 space-y-2 text-gray-600">
+                        <li><i class="fas fa-check text-primary mr-2"></i> 1 Halaman</li>
+                        <li><i class="fas fa-check text-primary mr-2"></i> Responsive Design</li>
+                    </ul>
+                    <button class="w-full py-3 border border-primary text-primary rounded-lg hover:bg-primary hover:text-white transition">Pilih Paket</button>
+                </div>
+                <div class="bg-white p-8 rounded-lg border-t-4 border-primary shadow-xl scale-105">
+                    <h3 class="text-lg font-bold mb-4">Standard</h3>
+                    <div class="text-4xl font-bold mb-6">Rp 3jt<span class="text-sm text-gray-400">/proyek</span></div>
+                    <ul class="mb-8 space-y-2 text-gray-600">
+                        <li><i class="fas fa-check text-primary mr-2"></i> 5 Halaman</li>
+                        <li><i class="fas fa-check text-primary mr-2"></i> Free Hosting 1 Thn</li>
+                    </ul>
+                    <button class="w-full py-3 bg-primary text-white rounded-lg hover:bg-secondary transition">Pilih Paket</button>
+                </div>
+                <div class="bg-white p-8 rounded-lg border-t-4 border-gray-300 shadow-sm">
+                    <h3 class="text-lg font-bold mb-4">Premium</h3>
+                    <div class="text-4xl font-bold mb-6">Rp 7jt<span class="text-sm text-gray-400">/proyek</span></div>
+                    <ul class="mb-8 space-y-2 text-gray-600">
+                        <li><i class="fas fa-check text-primary mr-2"></i> Full Custom</li>
+                        <li><i class="fas fa-check text-primary mr-2"></i> CMS Integration</li>
+                    </ul>
+                    <button class="w-full py-3 border border-primary text-primary rounded-lg hover:bg-primary hover:text-white transition">Pilih Paket</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-12">Kata Mereka</h2>
+            <div class="max-w-3xl mx-auto italic text-lg text-gray-600">
+                <p>"Bekerja dengan tim ini adalah pengalaman yang luar biasa. Hasilnya melebihi ekspektasi kami dan sangat membantu peningkatan omzet bisnis!"</p>
+                <div class="mt-6 font-bold text-gray-900 not-italic">- Budi Santoso, Owner Coffee Shop</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h2 class="text-3xl font-bold mb-8 text-center">Pertanyaan Umum (FAQ)</h2>
+            <div class="space-y-4">
+                <details class="bg-white p-4 rounded-lg shadow-sm cursor-pointer">
+                    <summary class="font-bold text-primary">Berapa lama waktu pengerjaan website?</summary>
+                    <p class="mt-2 text-gray-600">Rata-rata 1-2 minggu tergantung kerumitan desain dan fitur.</p>
+                </details>
+                <details class="bg-white p-4 rounded-lg shadow-sm cursor-pointer">
+                    <summary class="font-bold text-primary">Apakah sudah termasuk biaya hosting?</summary>
+                    <p class="mt-2 text-gray-600">Untuk paket Standard dan Premium sudah termasuk hosting tahun pertama.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 container mx-auto px-6">
+        <h2 class="text-3xl font-bold mb-12 text-center">Artikel Terbaru</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="rounded-lg overflow-hidden shadow-lg bg-white">
+                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=500&q=80">
+                <div class="p-6">
+                    <h3 class="font-bold mb-2">Tren Desain 2024</h3>
+                    <p class="text-gray-500 text-sm mb-4">Pelajari tren warna dan layout yang populer tahun ini.</p>
+                    <a href="#" class="text-primary font-bold">Baca Selengkapnya →</a>
+                </div>
+            </div>
+            <div class="rounded-lg overflow-hidden shadow-lg bg-white">
+                <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=500&q=80">
+                <div class="p-6">
+                    <h3 class="font-bold mb-2">Tips SEO Dasar</h3>
+                    <p class="text-gray-500 text-sm mb-4">Cara membuat website Anda muncul di halaman pertama Google.</p>
+                    <a href="#" class="text-primary font-bold">Baca Selengkapnya →</a>
+                </div>
+            </div>
+            <div class="rounded-lg overflow-hidden shadow-lg bg-white">
+                <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=500&q=80">
+                <div class="p-6">
+                    <h3 class="font-bold mb-2">Keamanan Website</h3>
+                    <p class="text-gray-500 text-sm mb-4">Pentingnya SSL dan update berkala untuk keamanan data.</p>
+                    <a href="#" class="text-primary font-bold">Baca Selengkapnya →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center text-primary">Hubungi Kami</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <form class="space-y-4">
+                    <input type="text" placeholder="Nama Anda" class="w-full p-4 rounded-lg border-gray-300 border focus:ring-2 focus:ring-primary outline-none">
+                    <input type="email" placeholder="Email Anda" class="w-full p-4 rounded-lg border-gray-300 border focus:ring-2 focus:ring-primary outline-none">
+                    <textarea placeholder="Pesan Anda" rows="4" class="w-full p-4 rounded-lg border-gray-300 border focus:ring-2 focus:ring-primary outline-none"></textarea>
+                    <button class="bg-primary text-white w-full py-4 rounded-lg font-bold hover:bg-secondary transition shadow-lg">Kirim Pesan Sekarang</button>
+                </form>
+                <div class="space-y-6">
+                    <div class="flex items-center gap-4">
+                        <i class="fas fa-map-marker-alt text-primary text-2xl"></i>
+                        <p>Jakarta Selatan, Indonesia</p>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <i class="fas fa-phone text-primary text-2xl"></i>
+                        <p>+62 812 3456 7890</p>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <i class="fas fa-envelope text-primary text-2xl"></i>
+                        <p>halo@perusahaan.com</p>
+                    </div>
+                    <div class="w-full h-48 bg-gray-300 rounded-lg animate-pulse flex items-center justify-center">Peta Lokasi</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-10 border-t-8 border-primary">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex justify-center space-x-6 mb-8 text-2xl">
+                <a href="#" class="hover:text-primary transition"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="hover:text-primary transition"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="hover:text-primary transition"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="hover:text-primary transition"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p>&copy; 2024 PortfoRio. Dibuat dengan <i class="fas fa-heart text-red-500"></i> dan Tailwind CSS.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Fitur Back to Top
+        const backToTop = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTop.classList.remove('hidden');
+            } else {
+                backToTop.classList.add('hidden');
+            }
+        });
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Toggle Menu Mobile (Sederhana)
+        const menuBtn = document.getElementById('menuBtn');
+        menuBtn.addEventListener('click', () => {
+            alert('Menu mobile aktif - Silakan tambahkan navigasi list sesuai kebutuhan.');
+        });
+    </script>
+</body>
+</html>
